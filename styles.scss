@@ -1,0 +1,41 @@
+$purple: rgb(99, 0, 165);
+
+* {
+  font-family: "Baloo Thambi 2"
+}
+
+#heading {
+  text-align: center;
+  font-weight: bold;
+  font-size: 4em;
+  color: $purple;
+}
+
+#root {
+  width: 24em;
+  margin: auto;
+}
+
+button {
+  padding: 1em;
+  background-color: $purple;
+  border-radius: 1em;
+  border: none;
+  color: white;
+}
+
+#dashboard {
+  text-align: center;
+  h1 {
+    font-size: 2em;
+    margin: auto;
+  }
+}
+
+.card {
+  border-radius: 1em;
+  box-shadow: 0px 0px 10px lightgray;
+  border: 1px solid lightgray;
+  padding: 1em;
+  margin: 1em 0;
+}

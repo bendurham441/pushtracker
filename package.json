@@ -1,0 +1,22 @@
+{
+  "name": "pushtracker",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ben Durham",
+  "license": "ISC",
+  "dependencies": {
+    "chart.js": "^2.9.3",
+    "parcel-bundler": "^1.12.4",
+    "react": "^16.13.1",
+    "react-chartjs-2": "^2.10.0",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "sass": "^1.26.10"
+  }
+}
