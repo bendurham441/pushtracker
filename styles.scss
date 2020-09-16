@@ -52,7 +52,7 @@ $purple: rgb(35, 94, 255);
 
   font-weight: 600;
   font-size: 1.2em;
-  width: 4em;
+  width: 5em;
   text-align: center;
 }
 
@@ -130,4 +130,29 @@ button:hover {
     padding: 0.1em;
     margin-left: 0.5em;
   }
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer {
+  padding: 2em;
+  margin-top: 2em;
+  border-top: 0.1em solid lightgray;
+}
+
+.footer-link {
+  color: grey;
+}
+
+.footer-link:hover {
+  color: $purple;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 3em;
+  color: grey;
 }
