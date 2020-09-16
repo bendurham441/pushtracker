@@ -156,3 +156,23 @@ footer {
   margin-top: 3em;
   color: grey;
 }
+
+.week {
+  display: flex;
+  justify-content: space-around;
+  padding: 1em;
+  border: 0.1em solid lightgray;
+  border-radius: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+#stats {
+  h1 {
+    text-align: center;
+    margin: auto;
+  }
+}
+
+.card-subheader {
+  margin: 1em 0 0.5em 0 !important;
+}

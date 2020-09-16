@@ -2,16 +2,15 @@ import React from "react";
 
 import Card from "./common/Card";
 
-const Workout = () => (
+const Workout = ({ day, time, sets }) => (
   <Card>
     <div className="workout">
-      <h1>Monday</h1>
-      <div className="time">10:52am</div>
+      <h1>{day}</h1>
+      <div className="time">{time}</div>
       <h2>Sets</h2>
-      <div className="set">10 reps</div>
-      <div className="set">10 reps</div>
-      <div className="set">10 reps</div>
-      <div className="set">10 reps</div>
+      {sets.map((set) => (
+        <div className="set">{set} {set === 1 ? "rep" : "reps"}</div>
+      ))}
     </div>
   </Card>
 );
