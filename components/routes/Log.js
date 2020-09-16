@@ -9,6 +9,7 @@ const Log = () => (
     <Workout />
     <Workout />
     <Workout />
+    <button>Load More</button>
   </section>
 );
 

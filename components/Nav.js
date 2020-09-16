@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
-    <nav style={{display: "flex", justifyContent: "space-around"}}>
+    <nav style={{display: "flex", justifyContent: "space-between"}}>
       <Link to="/" style={{textDecoration: "none"}}>
         <div className="nav-item">Home</div>
       </Link>

@@ -16,6 +16,7 @@ const Dashboard = () => (
           <p>Total reps</p>
         </article>
       </div>
+      <div>Last Workout: 24 hours ago</div>
     </section>
   </Card>
 );
