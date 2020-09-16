@@ -3,18 +3,51 @@ import { Bar } from "react-chartjs-2";
 
 import Card from "./common/Card";
 
+const weekData = [
+  {
+    day: "M",
+    reps: 5,
+  },
+  {
+    day: "T",
+    reps: 10,
+  },
+  {
+    day: "W",
+    reps: 11,
+  },
+  {
+    day: "Th",
+    reps: 17,
+  },
+  {
+    day: "F",
+    reps: 18,
+  },
+  {
+    day: "Sa",
+    reps: 21,
+  },
+  {
+    day: "Su",
+    reps: 25,
+  },
+];
+
 const Progress = () => {
+  let labels = weekData.map((dayData) => dayData.day);
+  let reps = weekData.map((dayData) => dayData.reps);
   return (
     <Card>
       <div id="progress">
         <h1>Progress</h1>
         <Bar
           data={{
-            labels: ["M", "T", "W", "Th", "F", "Sa", "Su"],
+            labels: labels,
             datasets: [
               {
                 backgroundColor: "rgba(35, 94, 255, 0.6)",
-                data: [5, 10, 12, 13, 16, 18, 21],
+                data: reps,
               },
             ],
           }}
@@ -26,12 +59,14 @@ const Progress = () => {
               display: false,
             },
             scales: {
-              yAxes: [{
-                ticks: {
-                  maxTicksLimit: 4
-                }
-              }]
-            }
+              yAxes: [
+                {
+                  ticks: {
+                    maxTicksLimit: 4,
+                  },
+                },
+              ],
+            },
           }}
         />
       </div>
