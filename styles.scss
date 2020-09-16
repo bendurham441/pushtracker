@@ -1,7 +1,7 @@
-$purple: rgb(99, 0, 165);
+$purple: rgb(35, 94, 255);
 
 * {
-  font-family: "Baloo Thambi 2"
+  font-family: "Baloo Thambi 2";
 }
 
 #heading {
@@ -11,17 +11,17 @@ $purple: rgb(99, 0, 165);
   color: $purple;
 }
 
+#progress {
+  h1 {
+    text-align: center;
+    font-size: 2em;
+    margin: auto;
+  }
+}
+
 #root {
   width: 24em;
   margin: auto;
-}
-
-button {
-  padding: 1em;
-  background-color: $purple;
-  border-radius: 1em;
-  border: none;
-  color: white;
 }
 
 #dashboard {
@@ -38,4 +38,59 @@ button {
   border: 1px solid lightgray;
   padding: 1em;
   margin: 1em 0;
+}
+@mixin button {
+  padding: 0.5em;
+  background-color: $purple;
+  border-radius: 1em;
+  color: white;
+  border: 0.2em solid $purple;
+}
+
+.nav-item {
+  @include button();
+
+  font-weight: 600;
+  font-size: 1.2em;
+  width: 4em;
+  text-align: center;
+}
+
+button {
+  @include button();
+  font-weight: 500;
+  font-size: 1em;
+  width: 100%;
+}
+
+@mixin hover {
+  border: 0.2em solid $purple;
+  background-color: white;
+  color: $purple;
+  transition: 0.3s;
+}
+
+button:hover {
+  @include hover();
+}
+
+.nav-item:hover {
+  @include hover();
+}
+
+.workout {
+  h1 {
+    text-align: center;
+    margin: auto;
+  }
+}
+
+.set {
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  border: 0.1em solid lightgray;
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 0.5em;
 }

@@ -9,7 +9,7 @@ const Home = () => (
     <Dashboard />
     <Progress />
     <Link to="add">
-      <button>Log a workout</button>
+      <button id="log-button">Log a workout</button>
     </Link>
   </section>
 );
