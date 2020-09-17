@@ -7,8 +7,8 @@ const Workout = ({ day, time, sets }) => (
     <div className="workout">
       <div className="time">{time}</div>
       <h2>Sets</h2>
-      {sets.map((set) => (
-        <div className="set">{set} {set === 1 ? "rep" : "reps"}</div>
+      {sets.map((set, index) => (
+        <div key={index} className="set">{set} {set === 1 ? "rep" : "reps"}</div>
       ))}
     </div>
   </Card>

@@ -32,8 +32,8 @@ const Stats = () => (
       </section>
       <section className="week-list">
         <h1 className="card-subheader">Rep Stats for each Week</h1>
-        {weeks.map((week) => (
-          <div className="week">
+        {weeks.map((week, index) => (
+          <div className="week" key={index}>
             <div>{week.date}</div>
             <div>{week.reps} reps</div>
           </div>

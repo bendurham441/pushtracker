@@ -17,8 +17,8 @@ const workouts = [
 
 const Log = () => (
   <section>
-    {workouts.map((workout) => (
-      <Workout day={workout.day} time={workout.time} sets={workout.sets}/>
+    {workouts.map((workout, index) => (
+      <Workout key={index} day={workout.day} time={workout.time} sets={workout.sets}/>
     ))}
     <button>Load More</button>
   </section>

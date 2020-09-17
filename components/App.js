@@ -8,7 +8,6 @@ import Landing from "./routes/Landing";
 
 const App = () => {
   const [loggedIn, setLoggedIn] = useState(false);
-  console.log(loggedIn)
   return (
     <Router>
       <header id="heading">PushTracker</header>
