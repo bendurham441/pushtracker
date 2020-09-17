@@ -1,41 +1,22 @@
-import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import React, { useState } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import Home from "./routes/Home";
-import LogForm from "./routes/LogForm";
 import Nav from "./Nav";
-import Log from "./routes/Log";
 import Footer from "./Footer";
-import Stats from "./routes/Stats";
-import Login from "./routes/Login";
-import Register from "./routes/Register";
+import UserPages from "./routes/UserPages";
+import Landing from "./routes/Landing";
 
-const App = () => (
-  <Router>
-    <header id="heading">PushTracker</header>
-    <Nav />
-    <Switch>
-      <Route exact path="/">
-        <Home />
-      </Route>
-      <Route path="/add">
-        <LogForm />
-      </Route>
-      <Route path="/log">
-        <Log />
-      </Route>
-      <Route path="/stats">
-        <Stats />
-      </Route>
-      <Route path="/login">
-        <Login />
-      </Route>
-      <Route path="/register">
-        <Register />
-      </Route>
-    </Switch>
-    <Footer />
-  </Router>
-);
+const App = () => {
+  const [loggedIn, setLoggedIn] = useState(false);
+  console.log(loggedIn)
+  return (
+    <Router>
+      <header id="heading">PushTracker</header>
+      <Nav />
+      {loggedIn ? <UserPages /> : <Landing login={setLoggedIn} />}
+      <Footer />
+    </Router>
+  );
+};
 
 export default App;
