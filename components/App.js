@@ -8,6 +8,7 @@ import Log from "./routes/Log";
 import Footer from "./Footer";
 import Stats from "./routes/Stats";
 import Login from "./routes/Login";
+import Register from "./routes/Register";
 
 const App = () => (
   <Router>
@@ -28,6 +29,9 @@ const App = () => (
       </Route>
       <Route path="/login">
         <Login />
+      </Route>
+      <Route path="/register">
+        <Register />
       </Route>
     </Switch>
     <Footer />

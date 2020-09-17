@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => (
   <footer>
-    <div class="footer-links">
+    <div className="footer-links">
       <Link to="/" style={{ textDecoration: "none" }}>
         <div className="footer-link">Home</div>
       </Link>
