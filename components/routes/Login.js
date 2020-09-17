@@ -5,10 +5,9 @@ import Card from "../common/Card";
 import { Link } from "react-router-dom";
 
 const Login = () => (
-  <Card>
+  <Card header="Login">
     <Formik>
       <Form>
-        <div>Login</div>
         <Field className="set-field" placeholder="Username/Email" />
         <Field className="set-field" placeholder="Password" />
         <button type="submit">Login</button>

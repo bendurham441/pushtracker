@@ -18,9 +18,8 @@ const weeks = [
 ];
 
 const Stats = () => (
-  <Card>
+  <Card header="Stats">
     <div id="stats">
-      <h1 class="card-header">Stats</h1>
       <section style={{ display: "flex", justifyContent: "space-around" }}>
         <article>
           <h1>5</h1>

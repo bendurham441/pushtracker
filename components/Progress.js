@@ -38,9 +38,8 @@ const Progress = () => {
   let labels = weekData.map((dayData) => dayData.day);
   let reps = weekData.map((dayData) => dayData.reps);
   return (
-    <Card>
+    <Card header="Progress">
       <div id="progress">
-        <h1>Progress</h1>
         <Bar
           data={{
             labels: labels,

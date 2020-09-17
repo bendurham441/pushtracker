@@ -3,9 +3,8 @@ import React from "react";
 import Card from "./common/Card";
 
 const Dashboard = () => (
-  <Card>
+  <Card header="Current Streak">
     <section id="dashboard">
-      <h1 style={{marginBottom: "0.5em"}}>Current Streak</h1>
       <div style={{ display: "flex", justifyContent: "space-around" }}>
         <article>
           <h1>1</h1>

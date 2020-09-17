@@ -3,9 +3,8 @@ import React from "react";
 import Card from "./common/Card";
 
 const Workout = ({ day, time, sets }) => (
-  <Card>
+  <Card header={day}>
     <div className="workout">
-      <h1>{day}</h1>
       <div className="time">{time}</div>
       <h2>Sets</h2>
       {sets.map((set) => (
