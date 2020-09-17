@@ -5,8 +5,9 @@ import Home from "./routes/Home";
 import LogForm from "./routes/LogForm";
 import Nav from "./Nav";
 import Log from "./routes/Log";
-import Footer from "./Footer"
+import Footer from "./Footer";
 import Stats from "./routes/Stats";
+import Login from "./routes/Login";
 
 const App = () => (
   <Router>
@@ -24,6 +25,9 @@ const App = () => (
       </Route>
       <Route path="/stats">
         <Stats />
+      </Route>
+      <Route path="/login">
+        <Login />
       </Route>
     </Switch>
     <Footer />
